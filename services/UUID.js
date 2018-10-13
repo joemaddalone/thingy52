@@ -46,5 +46,8 @@ export default {
 		DATA: makeID(502),
 		STAT: makeID(503),
 		MIC: makeID(504)
+	},
+	BATTERY: {
+		ID: makeID('180F')
 	}
 };
