@@ -6,26 +6,34 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="flex container">
-		<div class="connect card flex items-center justify-center ma2">
+	<div class="wrapper">
+		<div class="connect card">
 			<button id="connect">Connect</button>
 		</div>
-		<div class="hidden card action flex items-center justify-center ma2">
+		<div class="hidden card action">
 			<button id="disconnect">Disconnect</button>
 		</div>
-		<div class="hidden card action flex items-center justify-center ma2">
+		<div class="hidden card action">
 			<span>Button is: <span id="btn">RELEASED</span></span>
 		</div>
-		<div class="hidden card action flex items-center justify-center ma2">
-			<div id="off" class="color off ma2 pointer"></div>
-			<div id="red" class="color red ma2 pointer"></div>
-			<div id="green" class="color green ma2 pointer"></div>
-			<div id="blue" class="color blue ma2 pointer"></div>
+		<div class="hidden card action">
+			<div id="off" class="color off pointer"></div>
+			<div id="red" class="color red pointer"></div>
+			<div id="green" class="color green pointer"></div>
+			<div id="blue" class="color blue pointer"></div>
 		</div>
-		<div class="hidden card action flex items-center justify-center ma2">
+		<div class="hidden card action">
 			<div id="batt">Battery: <span id="level"></span></div>
 		</div>
-		<div class="hidden card action flex items-center justify-center ma2">
+		<div class="hidden card action" id="env">
+			<div>Temp: <span id="temp"></span></div>
+			<div>Humidity: <span id="humidity"></span></div>
+			<div>Pressure: <span id="pressure"></span></div>
+		</div>
+		<div class="hidden card action">
+			<div id="motion">orientation: <span id="orientation"></span></div>
+		</div>
+		<div class="hidden card action">
 			<button id="btn_0">0</button>
 			<button id="btn_1">1</button>
 			<button id="btn_2">2</button>
@@ -35,6 +43,17 @@
 			<button id="btn_6">6</button>
 			<button id="btn_7">7</button>
 			<button id="btn_8">8</button>
+		</div>
+		<div class="hidden card action">
+			<button freq="523" id="tone_0">0</button>
+			<button freq="587" id="tone_1">1</button>
+			<button freq="659" id="tone_2">2</button>
+			<button freq="698" id="tone_3">3</button>
+			<button freq="784" id="tone_4">4</button>
+			<button freq="880" id="tone_5">5</button>
+			<button freq="988" id="tone_6">6</button>
+			<button freq="1047" id="tone_7">8</button>
+			<button freq="1175" id="tone_8">9</button>
 		</div>
 	</div>
 	<script type="module" src="index.js"></script>
